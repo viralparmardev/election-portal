@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Election Commission of India - Viral Parmar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <br>
+        <h2 class="text-center"><a href="index.html" class="text-body">Election Commission of India</a></h2>
+        <p class="text-center">This is an assignment project submitted for the Learning Ability Assessment</p>
+        <br>
+    </header>
+
+    <!-- marquee -->
+    <div class="bg-danger">
+        <a href="https://eci.gov.in/uploads/monthly_2019_03/ge2019-map.jpg.a4db3ab0da89bfa732104faff1947518.jpg"
+            target="_blank">
+            <marquee>Don't forget to vote as per the schedule. Click here to note the voting date in your region.
+            </marquee>
+        </a>
+    </div>
+
+    <!-- form -->
+    <br>
+    <h2 class="text-center">Download your voter card</h2>
+    <p class="text-center">Enter your voter ID number below to download.</p>
+    <br>
+    <div class="container">
+        <form class="needs-validation" novalidate action="card.php" method="POST" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="col-md-4 mb-3"></div>
+                <div class="col-md-4 mb-3">
+                    <select class="form-control" id="select_1" name="choice">
+                        <option value="ids">Voter ID number</option>
+                        <option value="mobiles">Mobile number</option>
+                        <option value="aadhars">Aadhar number</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3"></div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-3 mb-3"></div>
+                <div class="col-md-5 mb-3">
+                    <input type="text" name="entry" class="form-control" id="validationCustom01"
+                        placeholder="Enter your search query" required>
+                    <div class="invalid-feedback">
+                        Please enter your search query.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <button class="btn btn-primary" type="submit">Download</button>
+                </div>
+            </div>
+        </form>
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+    </div>
+
+
+    <!-- emblem -->
+    <br>
+    <div class="text-center">
+        <img src="images/emblem.png" width="50px" class="img-responsive center-block" alt="Emblem">
+        <br>
+    </div>
+
+    <br>
+    <!-- marquee -->
+    <div class="bg-success">
+        <a href="https://eci.gov.in/" target="_blank">
+            <marquee>Thank you for using your right to vote for the progress of the nation - Government of India.
+            </marquee>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer text-center text-muted">Created by <a href="https://viralparmar.ml" class="text-muted"
+            target="_blank">Viral Parmar</a> for UpSkill programme
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
