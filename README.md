@@ -3,14 +3,6 @@
 This repository contains my assignment project submitted for the learning ability assessment at the UpSkill programme by TechZilla.
 
 ___
-## The website is now live!
-
-[Click here](https://electionid.ml) or type the following URL into the address bar of your browser:
-```bash
-https://electionid.ml
-```
-
-___
 ## How does it look?
 
 ![https://electionid.ml](https://i.imgur.com/8RQDv3D.jpg)
